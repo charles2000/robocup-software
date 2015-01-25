@@ -15,13 +15,13 @@ public:
 	};
 	virtual void paintEvent ( QPaintEvent * event )	{
 		QRect rect = event->rect();
-    		draw(rect);
+    		draw(rect,13);
 	}
 
 
-	void draw(QRect &rect)
+	void draw(QRect &rect,int value)
 	{
-	    int value =10;
+	    
 	    
 	    QPainter painter(this);
 	    painter.setRenderHint(QPainter::Antialiasing);
